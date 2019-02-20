@@ -4,7 +4,7 @@ class Order {
     this.customer_id = null;
     this.vendor_id = null;
     this.dateCreated = null;
-    this.meals = null;
+    this.meal = null;
   }
 }
 
