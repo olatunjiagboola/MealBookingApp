@@ -4,7 +4,9 @@
   "description": "a simple meal booking api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "node ./build/index.js",
+    "build": "babel -d ./build ./api -s",
+    "dev": "nodemon --exec babel-node ./api/index.js"
   },
   "repository": {
     "type": "git",
