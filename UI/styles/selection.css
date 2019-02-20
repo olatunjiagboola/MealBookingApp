@@ -1,0 +1,109 @@
+.selectionHero{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/selection-bg.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 60px; 
+    text-align: center;
+}
+
+h2.selectionHeader {
+    color: #EA5B31;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+
+p.selectionheroText{
+    color: #EA5B31;
+    font-size: 1.3rem;
+}
+
+.date{
+    text-align: center;
+    background: #ddd;
+}
+
+.date input{
+    margin-bottom: 0;
+    border: none;
+    border-radius: none;
+}
+
+.date input[type="date"]{
+    font-size: 1.2rem;
+    
+}
+
+
+/* h4.available{
+    display: none;
+} */
+
+.mealSection{
+    text-align: center;
+}
+
+h4.sortMenu{
+    padding: 2rem;
+}
+
+h4.available{
+    color:  #4A4A4A;
+    padding: 1rem;
+}
+
+.mealDetails {
+    padding: 0.3rem;
+}
+
+.Meals{
+    width: 100%;
+    padding: 1em;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    text-align: left;
+   
+}
+
+.meal{
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); 
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.meal img{
+    width: 100%;
+    height: 200px;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .date{
+        height:250px;
+        background: #ddd;
+        text-align: center;
+
+    }
+
+    h4.sortMenu{
+        padding: 2rem;
+    }
+    
+    .date input{
+        width: 30%;
+        margin: auto;
+    }
+
+    h4.available{
+        display: block;
+        padding: 2rem;
+    }
+
+    h4.available{
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    } 
+}

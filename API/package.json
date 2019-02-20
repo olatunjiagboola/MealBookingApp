@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "a simple meal booking api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olatunjiagboola/MealBookingApp.git"
+  },
+  "keywords": [
+    "food",
+    "meal",
+    "booking",
+    "order",
+    "meals"
+  ],
+  "author": "olatunji agboola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olatunjiagboola/MealBookingApp/issues"
+  },
+  "homepage": "https://github.com/olatunjiagboola/MealBookingApp#readme"
+}

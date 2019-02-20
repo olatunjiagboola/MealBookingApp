@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buka</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+        <!-- header starts here -->
+         <header class="headerSection">
+                <h1 class="logo">Buka.ng</h1>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                  </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                  <span></span>
+                </label>
+            </header>
+            <!-- header ends here -->
+
+        
+        <!-- hero section starts here -->
+        <section class="menuHero">
+           <h2 class="heroHeader">
+               Buka Delivery
+           </h2>
+           <p class="heroText">
+               Select a menu to start ordering           
+            </p>
+
+            <!-- this section will only be visible on mobile -->
+            <section class="menuArea">
+                    <form  method="GET" action="selection.html" class="menuForm">
+                        <div class="selectMenu">
+                            <select>
+                                <option value="Breakfast">Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Dinner">Dinner</option>
+                                <option value="Office treats">Office Treats</option>
+                            </select>
+                        </div><div class="findButton">
+                            <a href="selection.html"><input type="submit" value="Find a meal"></a>
+                        </div>
+                    </form>
+            </section>
+        </section>
+     
+        <!-- hero section ends here -->
+
+        <section class="mainMenuOptions">
+            <div class="menuOption">
+                <img src="./assets/images/breakfastoption.jpg" alt="">
+                <p class="menuOptionDescription">
+                    <a href="selection.html">Breakfast</a>
+                </p>
+            </div>
+
+            <div class="menuOption">
+                <img src="./assets/images/lunchoption.jpg" alt="">
+                 <p class="menuOptionDescription">
+                    <a href="selection.html">Lunch</a>
+                </p>
+            </div>
+
+            <div class="menuOption">
+                <img src="./assets/images/dinneroption.jpg" alt="">
+                <p class="menuOptionDescription">
+                    <a href="selection.html">Dinner</a>
+                </p>
+            </div>
+
+            <div class="menuOption">
+                <img src="./assets/images/office.jpg" alt="">
+                <p class="menuOptionDescription">
+                    <a href="selection.html">Office Treats</a>
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            designed with LOVE by devteejay @ALCforloop
+        </footer>
+</body>
+</html>

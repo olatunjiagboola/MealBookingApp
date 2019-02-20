@@ -1,0 +1,157 @@
+
+.menuHero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65)), url(../assets/images/munubg.png) no-repeat center;
+    background-size: cover;
+    margin-top: 60px; 
+    text-align: center;
+}
+
+.heroHeader, .heroText{
+    color: white;
+    /* padding-left: 100px; */
+}
+
+.heroHeader{
+    padding-top: 200px;
+    font-size: 2rem;
+}
+
+.heroText{
+    margin-top: 0.3rem;
+}
+
+.menuForm{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.selectMenu{
+    display: inline-block; 
+}
+
+select{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.findButton{
+   display: inline-block; 
+}
+
+
+.findButton input[type="submit"]{
+    padding: 1rem;
+    font-size: 1rem;
+    /* width: 10rem; */
+    margin: 0;
+    border-radius: 0;
+}
+
+.mainMenuOptions{
+    display: none;
+    /* width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; */
+
+}
+
+.menuOption{
+    position: relative;
+    /* background: green; */
+}
+
+.menuOption img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.menuOptionDescription{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    align-content: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.menuOptionDescription a{
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .menuHero{
+        width: 100%;
+        height: 40vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65)), url(../assets/images/munubg.png) no-repeat center;
+        background-size: cover;
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    .heroHeader, .heroText{
+        color: white;
+        padding-left: 150px;
+    }
+
+    .heroHeader{
+        padding-top: 100px;
+        font-size: 2rem;
+    }
+
+    .heroText{
+        margin-top: 0.5rem;
+    }
+
+    .menuArea{
+        display: none;
+    }
+
+    .mainMenuOptions{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .menuOption{
+        position: relative;
+        /* background: green; */
+    }
+
+    .menuOption img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menuOptionDescription{
+        display: grid;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        align-content: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .menuOptionDescription a{
+        color: white;
+        cursor: pointer;
+    }
+
+}

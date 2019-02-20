@@ -1,0 +1,220 @@
+
+
+.catererDashboard{
+    display: grid;
+    margin-top: 60px;
+    padding: 1rem;
+    width: 100%;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background: #ddd;
+    grid-template-areas:    "sidebar topbox topbox topbox"
+                            "sidebar menuboard menuboard menuboard" 
+                            "sidebar order order order"
+                            "sidebar order order order";
+}
+
+.sideBar{
+    grid-area: sidebar;
+    background: #0D3B51;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.topBoxes{
+    display: grid;
+    grid-area: topbox;
+    background: #098DB8;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.topBox{
+   padding: 1rem; 
+   text-align: center;   
+}
+
+.topBox h4{
+    font-size: 3rem;
+
+}
+
+.menuBoard{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-area: menuboard;
+    background: #0F5B78;
+    border-radius: 3px;
+    align-items: center;
+    justify-items: center;
+}
+
+.menuBoard img{
+    width: 40%;
+  
+}
+
+.manageMeals, .manageMenu{
+    text-align: center;
+    color: white;
+    /* padding: 1rem; */
+    /* border: 2px solid white;
+    border-radius: 3px; */
+}
+
+.manageMeals:hover, .manageMenu:hover{
+    cursor: pointer;
+    color: #ccc;
+}
+
+.orderBoard{
+    grid-area: order;
+    background:white;
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.filterForm{
+    width: 50%;
+    margin: auto;
+
+}
+
+
+.filterForm input[type="date"]{
+    width: 60%;
+    float: left;
+    padding: 0.7rem;
+    margin: 0;
+}
+
+.filterbtn{
+    width: 40%;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0.85rem;
+}
+
+.clr{
+    clear: both;
+}
+
+#orders{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#orders th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #D94E1F;
+    color: white;
+}
+
+#orders td, #orders th {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+
+
+  #orders tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+
+  #orders tr:hover {
+      background-color: #ddd;
+    }
+
+@media only screen and ( max-width: 600px ) {
+.catererDashboard{
+    display: grid;
+    margin-top: 60px;
+    padding: 0.5rem;
+    width: 100%;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: #ddd;
+    grid-template-areas:    "sidebar"
+                            "topbox" 
+                            "menuboard"
+                            "order";
+    }
+
+.topBox{
+    padding: 0.5rem;
+    text-align: center;   
+}
+
+.topBox h4{
+        font-size: 1rem;
+     
+}
+
+.menuBoard{
+    display: grid;
+    align-items: end;
+
+}
+
+.filterForm input[type="date"]{
+    width: 50%;
+    float: left;
+    padding: 0.7rem;
+    margin: 0;
+}
+
+.filterbtn{
+    width: 50%;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0.85rem;
+}
+
+.filterForm{
+    width: 100%;
+
+}
+
+.menuBoard img{
+    width: 30%;
+  
+}
+
+.sideBar{
+    grid-area: sidebar;
+    background: #0D3B51;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+
+#orders{
+    overflow-x: auto;
+    width: 100%;
+}
+
+}

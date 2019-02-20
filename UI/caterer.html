@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buka</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+
+        <!-- header begins here -->
+            <header class="headerSection">
+                <h1 class="logo">Buka.ng</h1>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                  </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                  <span></span>
+                </label>
+            </header>
+            <!-- header ends here -->
+
+            <section class="catererDashboard">
+                <div class="sideBar">
+                    
+                        <img src="./assets/images/chef.png" alt="chef" class="avatar">
+                
+                        <h4><strong>Africana Cuisine</strong></h4>
+                        <p>Vendor Id: 015678</p>
+
+                </div>
+
+                <div class="topBoxes">
+                    <div class="topBox">
+                        <h4>21</h4>
+                        <p>Orders Today</p>
+                    </div> 
+                    
+                    <div class="topBox">
+                        <h4>&#8358; 27,150</h4>
+                        <p>Balance</p>
+                    </div> 
+
+                    <div class="topBox">
+                        <h4>&#8358; 7,200</h4>
+                        <p>Earned Today</p>
+                    </div> 
+                </div>
+
+                <div class="menuBoard">
+                    <div class="manageMenu">
+                        <img src="./assets/images/menu2.png" alt="manage menu">
+                        <p>Manage Menu<span> > </span></p>
+                    </div>
+
+                    <div class="manageMeals">
+                        <img src="./assets/images/turkey.png" alt="manage menu">
+                        <p>Manage Meals<span> > </span></p>
+                    </div>
+                    
+                </div>
+
+                <div class="orderBoard">
+                    <h3>Recent Orders</h3>
+                    <div class="filterForm">
+                        <div class="filterInput">
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="filterButton">
+                            <button class="btn filterbtn">Filter by date</button>
+                        </div>
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <div class="table">
+                        <table id="orders">
+
+                             <tr>
+                                 <th>Meal</th>
+                                 <th>Category</th>
+                                 <th>Price</th>
+                                 <th>Order Id</th>
+                             </tr> 
+
+                             <tr>
+                                 <td>Jollof Rice and Chicken</td>
+                                 <td>Breakfast</td>
+                                 <td>&#8358; 1,200</td>
+                                 <td>1253</td>
+                             </tr>
+
+                             <tr>
+                                <td>Spicy Moi Moi</td>
+                                <td>Breakfast</td>
+                                <td>&#8358; 800</td>
+                                <td>1254</td>
+                            </tr>
+
+                            <tr>
+                                <td>Fried Rice and Chicken</td>
+                                <td>Lunch</td>
+                                <td>&#8358; 1,650</td>
+                                <td>1255</td>
+                            </tr>
+
+                            <tr>
+                                <td>Eba with Egusi</td>
+                                <td>Dinner</td>
+                                <td>&#8358; 1,500</td>
+                                <td>1256</td>
+                            </tr>
+
+                            <tr>
+                                <td>Jollof Rice and Chicken</td>
+                                <td>Breakfast</td>
+                                <td>&#8358; 1,700</td>
+                                <td>1257</td>
+                             </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            <!-- footer starts here -->
+        <footer class="footer">
+                designed with LOVE by devteejay @ALCforloop
+        </footer>
+    </body>
+</html>

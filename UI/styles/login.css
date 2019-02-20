@@ -1,0 +1,96 @@
+
+
+.loginSection{
+    /* height:90vh; */
+    margin-top: 60px;
+    /* padding-top: 1rem; */
+}
+
+.loginForm{
+    width: 100%;
+    background: white;
+    padding:4rem 1.5rem;
+    
+}
+
+h2.formHeading{
+    color: #EA5B31;
+    text-align: center;
+    font-size:3rem;
+    margin-bottom: 1rem; 
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding:1rem;
+    font-family: inherit;
+    outline: none;
+    border: 2px solid #ccc;
+    color: #4A4A4A;
+    
+
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type=tel]:focus{
+    outline: none;
+    border-color: #EA5B31;
+    
+}
+
+.signUp input[type="submit"],
+input[type="submit"]{
+    outline: none;
+    background-color: #EA5B31;
+    color:white;
+    border: none;
+    padding: 1rem;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.forgotPassword{
+    margin-bottom: 1rem; 
+    color: #EA5B31;
+    text-align: center;
+}
+
+.forgotPassword a{
+    text-decoration: none;
+    color:#EA5B31;
+}
+
+.signupCTA{
+    margin-bottom: 1rem; 
+    color: #EA5B31;
+    text-align: center;
+}
+
+.signupCTA a{
+    text-decoration: none;
+    color: #ea5b31;
+}
+
+@media only screen and (min-width: 600px) {
+    .loginSection{
+        padding-top: 3rem;
+        height: 90vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/loginbg.png) no-repeat center;
+        background-size: cover;
+        
+    }
+    
+    .loginForm{
+        width: 30%;
+        margin:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); 
+        border-radius: 0.3rem;
+    }
+
+}
