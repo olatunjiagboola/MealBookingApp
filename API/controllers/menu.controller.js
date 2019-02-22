@@ -1,7 +1,7 @@
 import MenuService from '../services/menu.service';
 
 const MenuController = {
-  fetchAllMeals(req, res) {
+  fetchMenu(req, res) {
     const Menu = MenuService.fetchMenu();
     return res.json({
       status: 'Success',
