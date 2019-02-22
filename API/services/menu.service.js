@@ -18,11 +18,10 @@ const MenuService = {
     const menuLength = dummyData.Menu.length;
     const lastId = dummyData.Menu[menuLength - 1].id;
     const newId = lastId + 1;
+    const newMenu = { id: newId, ...menu };
 
-    menu.id = newId;
-
-    dummyData.Menu.push(menu);
-    return menu;
+    dummyData.Menu.push(newMenu);
+    return newMenu;
   },
 };
 

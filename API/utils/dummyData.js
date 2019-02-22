@@ -114,6 +114,29 @@ export default {
           name: 'Ewa agoyin',
           price: '500',
         },
+        {
+          id: 6,
+          name: 'Bread and wine',
+          price: '700',
+        },
+      ],
+    },
+    {
+      id: 2,
+      customer_id: 4,
+      vendor_id: 3,
+      dateCreated: '15/02/2019',
+      meal: [
+        {
+          id: 1,
+          name: 'Efo riro',
+          price: '350',
+        },
+        {
+          id: 3,
+          name: 'Fried Fish',
+          price: '700',
+        },
       ],
     },
   ],

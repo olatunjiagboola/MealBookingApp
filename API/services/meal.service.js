@@ -22,17 +22,22 @@ const MealService = {
     const mealLength = dummyData.Meals.length;
     const lastId = dummyData.Meals[mealLength - 1].id;
     const newId = lastId + 1;
-    meal.id = newId;
-    dummyData.Meals.push(meal);
-    return meal;
+    const addedMeal = { id: newId, ...meal };
+    dummyData.Meals.push(addedMeal);
+    return addedMeal;
   },
 
   updateMeal(id, mealUpdate) {
     const mealIndex = dummyData.Meals.findIndex(meal => meal.id === id);
-    const meal = dummyData.meals[mealIndex];
-    meal.name = mealUpdate.name;
-    meal.price = mealUpdate.price;
-    return meal;
+    const oldMeal = { ...dummyData.Meals[mealIndex] };
+    const updatedMeal = {
+      id,
+      name: mealUpdate.name ? mealUpdate.name : oldMeal.name,
+      price: mealUpdate.price ? mealUpdate.price : oldMeal.price,
+    };
+
+    dummyData.Meals[mealIndex] = updatedMeal;
+    return updatedMeal;
   },
 
   deleteMeal(id) {
