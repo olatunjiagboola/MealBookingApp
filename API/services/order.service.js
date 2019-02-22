@@ -19,10 +19,25 @@ const OrderService = {
     const lastId = dummyData.Orders[orderLength - 1].id;
     const newId = lastId + 1;
 
-    order.id = newId;
+    const newOrder = { id: newId, ...order };
 
-    dummyData.orders.push(order);
-    return order;
+    dummyData.Orders.push(newOrder);
+    return newOrder;
+  },
+
+  updateOrder(id, orderUpdate) {
+    const orderIndex = dummyData.Meals.findIndex(meal => meal.id === id);
+    const oldOrder = { ...dummyData.Orders[orderIndex] };
+    const updatedOrder = {
+      id,
+      vendor_id: oldOrder.vendor_id,
+      customer_id: oldOrder.customer_id,
+      dateCreated: oldOrder.dateCreated,
+      meal: orderUpdate.meal ? orderUpdate.meal : oldOrder.meal,
+    };
+
+    dummyData.Orders[orderIndex] = updatedOrder;
+    return updatedOrder;
   },
 };
 
