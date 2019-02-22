@@ -7,14 +7,15 @@ const MealService = {
       const newMeal = new Meal();
       newMeal.id = meal.id;
       newMeal.name = meal.name;
-      newMeal.price = meal.price;
+      newMeal.Price = meal.Price;
 
-      return foundMeals;
+      return newMeal;
     });
+    return foundMeals;
   },
 
   getSingleMeal(id) {
-    const foundMeal = dummyData.Meals.find(meal => meal.id === id);
+    const foundMeal = dummyData.Meals.find(meal => meal.id == id);
     return foundMeal || {};
   },
 
@@ -22,18 +23,19 @@ const MealService = {
     const mealLength = dummyData.Meals.length;
     const lastId = dummyData.Meals[mealLength - 1].id;
     const newId = lastId + 1;
-    const addedMeal = { id: newId, ...meal };
+    const addedMeal = meal;
+    addedMeal.id = newId;
     dummyData.Meals.push(addedMeal);
     return addedMeal;
   },
 
   updateMeal(id, mealUpdate) {
-    const mealIndex = dummyData.Meals.findIndex(meal => meal.id === id);
+    const mealIndex = dummyData.Meals.findIndex(meal => meal.id == id);
     const oldMeal = { ...dummyData.Meals[mealIndex] };
     const updatedMeal = {
       id,
       name: mealUpdate.name ? mealUpdate.name : oldMeal.name,
-      price: mealUpdate.price ? mealUpdate.price : oldMeal.price,
+      Price: mealUpdate.Price ? mealUpdate.Price : oldMeal.Price,
     };
 
     dummyData.Meals[mealIndex] = updatedMeal;
