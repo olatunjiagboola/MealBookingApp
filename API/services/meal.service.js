@@ -15,7 +15,7 @@ const MealService = {
   },
 
   getSingleMeal(id) {
-    const foundMeal = dummyData.Meals.find(meal => meal.id == id);
+    const foundMeal = dummyData.Meals.find(meal => meal.id === id);
     return foundMeal || {};
   },
 
@@ -30,7 +30,7 @@ const MealService = {
   },
 
   updateMeal(id, mealUpdate) {
-    const mealIndex = dummyData.Meals.findIndex(meal => meal.id == id);
+    const mealIndex = dummyData.Meals.findIndex(meal => meal.id === id);
     const oldMeal = { ...dummyData.Meals[mealIndex] };
     const updatedMeal = {
       id,
@@ -44,6 +44,7 @@ const MealService = {
 
   deleteMeal(id) {
     dummyData.Meals = dummyData.Meals.filter(meal => meal.id !== id);
+    return dummyData.Meals;
   },
 };
 
