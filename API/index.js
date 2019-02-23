@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 
 // meal routes
 import mealRoutes from './routes/meal.route';
+// menu routes
+import menuRoutes from './routes/menu.route';
 
 const app = express();
 
@@ -16,6 +18,7 @@ app.get('/', (req, res) => {
 
 // handle
 app.use('/api/v1/meals', mealRoutes);
+app.use('/api/v1/menu', menuRoutes);
 
 app.listen(PORT, () => {
   console.log(`The server is now running on PORT: ${PORT}`);

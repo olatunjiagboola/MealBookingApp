@@ -11,7 +11,7 @@ const MenuController = {
 
   addMenu(req, res) {
     const Menu = req.body;
-    const createdMenu = MenuService.addMeal(Menu);
+    const createdMenu = MenuService.addMenu(Menu);
     return res.json({
       status: 'Success',
       data: createdMenu,

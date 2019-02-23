@@ -77,7 +77,7 @@ export default {
     },
 
     {
-      id: 2,
+      id: 3,
       vendor_id: 1,
       day: '14/02/2019',
       category: 'Dinner',
