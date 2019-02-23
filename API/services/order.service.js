@@ -15,7 +15,7 @@ const OrderService = {
   },
 
   addOrder(order) {
-    const orderLength = dummyData.orders.length;
+    const orderLength = dummyData.Orders.length;
     const lastId = dummyData.Orders[orderLength - 1].id;
     const newId = lastId + 1;
 

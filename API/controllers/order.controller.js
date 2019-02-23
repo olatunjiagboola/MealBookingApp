@@ -21,7 +21,7 @@ const OrderController = {
   updateOrder(req, res) {
     const { id } = req.params;
     const orderUpdate = req.body;
-    const updatedOrder = OrderService.updateOrder(id, orderUpdate);
+    const updatedOrder = OrderService.updateOrder(parseInt(id, 10), orderUpdate);
     return res.json({
       status: 'Success',
       data: updatedOrder,

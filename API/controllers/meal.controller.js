@@ -20,7 +20,7 @@ const MealController = {
 
   getMeal(req, res) {
     const { id } = req.params;
-    const foundMeal = MealService.getSingleMeal(id);
+    const foundMeal = MealService.getSingleMeal(parseInt(id, 10));
     return res.json({
       status: 'Success',
       data: foundMeal,
@@ -30,19 +30,21 @@ const MealController = {
   updateMeal(req, res) {
     const { id } = req.params;
     const mealUpdate = req.body;
-    MealService.updateMeal(id, mealUpdate);
+    const theMeal = MealService.updateMeal(parseInt(id, 10), mealUpdate);
     return res.json({
       status: 'Success',
       message: 'Meal Updated Successfully',
+      data: theMeal,
     }).status(201);
   },
 
   deleteMeal(req, res) {
     const { id } = req.params;
-    MealService.deleteMeal(id);
+    const meals = MealService.deleteMeal(parseInt(id, 10));
     return res.json({
       status: 'success',
       message: 'meal deleted successfully',
+      data: meals,
     });
   },
 };
