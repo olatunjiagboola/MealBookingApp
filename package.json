@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./build/index.js",
     "build": "babel -d ./build ./api -s",
-    "dev": "nodemon --exec babel-node ./api/index.js"
+    "dev": "nodemon --exec babel-node ./api/index.js",
+    "test": "mocha --recursive --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "@babel/core": "^7.3.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
     "babel-cli": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
