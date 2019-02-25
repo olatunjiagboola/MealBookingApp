@@ -7,7 +7,7 @@
     "start": "node ./build/index.js",
     "build": "babel -d ./build ./api -s",
     "dev": "nodemon --exec babel-node ./api/index.js",
-    "test": "mocha --recursive --require @babel/register"
+    "test": "mocha --require @babel/register API/test/*.js"
   },
   "repository": {
     "type": "git",
