@@ -7,7 +7,8 @@
     "start": "node ./build/index.js",
     "build": "babel -d ./build ./api -s",
     "dev": "nodemon --exec babel-node ./api/index.js",
-    "test": "mocha --require @babel/register API/test/*.js --exit"
+    "test": "nyc mocha --require @babel/register API/test/*.js --exit",
+    "coverage": "nyc report --reporter=lcov --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -38,10 +39,12 @@
     "babel-cli": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "coveralls": "^3.0.3",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "mocha": "^6.0.1",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0"
   }
 }
