@@ -93,4 +93,11 @@ input[type="submit"]{
         border-radius: 0.3rem;
     }
 
+    #customer{
+        background: white;
+        color: #ea5b31;
+        padding: 1rem;
+        border-radius: 3px;
+    }
+
 }

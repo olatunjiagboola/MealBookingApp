@@ -1,0 +1,96 @@
+.goback{
+    text-align: center;
+    padding: 1rem;
+}
+
+.goback a{
+    color: #4A4A4A;
+}
+
+.goback a:hover{
+    color:  #EA5B31;;
+}
+
+.addmeal-head{
+    padding: 1rem;
+}
+
+.addMeal-btn {
+    width: 70%;
+    margin: auto;
+}
+
+.mealImg{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.mealImg img{
+    border-radius: 3px;
+}
+
+.availablemeal{
+    text-align: center;
+    padding: 1rem;
+}
+
+.delete{
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background: red;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.edit{
+    position: absolute;
+    bottom: 0.6rem;
+    right: 5.6rem;
+    background: #F99728;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .addmealForm{
+        display: flex;
+        width: 45%;
+        margin: auto;
+    }
+
+    .addmeal-head{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/lunchoption.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .addmealForm input{
+        border: none;
+        margin: 1rem 0.5rem;
+        border-radius: 3px;
+    }
+
+    .addmeal-head input[type="file"]{
+        width: 30%;
+        border: none;
+        color: #4A4A4A;
+        margin: auto;
+        background-color: #ccc;
+        margin-bottom: 1rem;
+    }
+    .addMeal-btn {
+        width: 30%;
+        margin: auto;
+    }
+}

@@ -139,49 +139,6 @@ body{
     transition: opacity 250ms ease-in-out 250ms;
   }
 
-/* TEST */
-
-
-
-.mainNavbar{
-    width:100%;
-    height: 60px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
-    padding: 0 10px;
-    /* position:fixed; */
-}
-
-.navbarBrand{
-    display:grid;
-    justify-content: start;
-    align-content: center;
-    color: white;
-    font-size:1.2rem;
-}
-
-h1.navbarBrand{
-    margin-top: 1.2rem;
-}
-
-.navBarMenu{
-    display: none;
-}
-
-.harmburger{
-    display: grid;
-    align-content: center;
-    justify-content: end;
-    grid-auto-flow: column;
-    font-size: 1rem;
-}
-
-.harmburger img{
-    width: 100%;
-    max-width: 3rem;;
-
-}
 
 .footer{
   background: rgba(0, 0, 0, 0.8);
@@ -252,7 +209,7 @@ h1.navbarBrand{
           color: white;
       }
       
-      nav a::before {
+      /* nav a::before {
         content: '';
         display: block;
         height: 5px;
@@ -262,50 +219,14 @@ h1.navbarBrand{
         left: 0;
         right: 0;
         transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
-      }
+        transition: transform ease-in-out 250ms; */
+      /* }
       
       nav a:hover::before {
         transform: scale(1,1);
-      }
+      } */
 
     /* TEST */
-
-    .mainNavbar{
-        width:80%;
-        padding: 0 20px;
-        margin: auto;
-      
-    }
-
-    .navbarBrand{
-        font-size:1.5rem;
-
-    }
-
-    h1.navbarBrand{
-        margin-top: 0.9rem;
-    }
-
-    .harmburger{
-        display: none;
-    }
-
-    .navBarMenu{
-        display: grid;
-        align-content: center;
-        justify-content: end;
-        grid-auto-flow: column;
-        grid-gap:1.25rem;
-        font-size: 1rem;
-
-    }
-
-    .navBarMenu a{
-        color: white;
-        font-size: 1.2rem;
-        padding: 0.2rem 0.8rem;
-    }
 
     .footer{
       background: rgba(0, 0, 0, 0.8);
